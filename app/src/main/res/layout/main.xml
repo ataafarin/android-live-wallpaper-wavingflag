@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="پس زمینه متحرک پرچم سپیدرود"
+        android:id="@+id/wallpaperButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:onClick="onClick" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/s"
+        android:layout_above="@+id/wallpaperButton"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/logoarmiksoft"
+        android:layout_alignRight="@+id/wallpaperButton"
+        android:layout_alignEnd="@+id/wallpaperButton"
+        android:layout_alignTop="@+id/wallpaperButton"
+        android:layout_alignLeft="@+id/wallpaperButton"
+        android:layout_alignStart="@+id/wallpaperButton" />
+
+</RelativeLayout>
+

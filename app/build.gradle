@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.armiksoft.livewallpaper.wavingFlag"
+        minSdkVersion 10
+        targetSdkVersion 21
+        manifestPlaceholders = [onesignal_app_id: "640ba58d-05ca-4b15-9c8a-ac28018f6a15",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
+    }
+    dependencies {
+        // OneSignal SDK
+        compile 'com.onesignal:OneSignal:[3.5.3,4.0.0)'
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+        }
+    }
+}
